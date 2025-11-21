@@ -9,7 +9,7 @@ const memberData = [
   { 
     name: 'Lee Soojin', 
     positions: ['Leader', 'Main Dancer'],
-    birth: 'Mar 12',
+    birth: 'December 12, 2001',
     height: '164cm',
     color: 'Purple',
     images: {
@@ -23,9 +23,9 @@ const memberData = [
     }
   },
   { 
-    name: 'Shin Jiyo Hyewon', 
+    name: 'Shin Jiyoon', 
     positions: ['Lead Dancer', 'Maknae'],
-    birth: 'Dec 03',
+    birth: 'March 02, 2002',
     height: '166cm',
     color: 'Orange',
     images: {
@@ -41,7 +41,7 @@ const memberData = [
   { 
     name: 'Kim Jimin', 
     positions: ['Main Vocalist'],
-    birth: 'Aug 04',
+    birth: 'May 10, 2002',
     height: '162cm',
     color: 'Blue',
     images: {
@@ -57,7 +57,7 @@ const memberData = [
   { 
     name: 'Park Soeun', 
     positions: ['Lead Vocalist'],
-    birth: 'Nov 21',
+    birth: 'October 26, 2002',
     height: '163cm',
     color: 'Red',
     images: {
@@ -73,7 +73,7 @@ const memberData = [
   { 
     name: 'Lee Jaehee', 
     positions: ['Main Rapper'],
-    birth: 'Jan 15',
+    birth: 'March 18, 2004',
     height: '165cm',
     color: 'Green',
     images: {
@@ -87,9 +87,9 @@ const memberData = [
     }
   },
   { 
-    name: 'Han Jihan', 
+    name: 'Han Jihyo', 
     positions: ['Sub Vocalist', 'Visual'],
-    birth: 'Jul 08',
+    birth: 'July 12, 2004',
     height: '161cm',
     color: 'Pink',
     images: {
@@ -108,59 +108,66 @@ const memberData = [
 const eraData = {
   tagMe: {
     name: 'Tag Me',
+    album: 'We Are',
     year: '2020',
     video: '/videos/tagme-mv.mp4',
     color: 'from-purple-500 to-pink-600',
-    accent: 'bg-pink-500',
-    border: 'border-pink-300'
+    accent: 'bg-[#927EB8]',
+    border: 'border-[#927EB8]'
   },
   zigZag: {
     name: 'Zig Zag',
+    album: 'We Can',
     year: '2020',
     video: '/videos/zigzag-mv.mp4',
     color: 'from-blue-500 to-teal-600',
-    accent: 'bg-teal-500',
-    border: 'border-teal-300'
+    accent: 'bg-[#F29200]',
+    border: 'border-[#F29200]'
   },
   afterSchool: {
     name: 'After School',
+    album: 'We Play',
     year: '2021',
     video: '/videos/afterschool-mv.mp4',
     color: 'from-red-500 to-orange-600',
-    accent: 'bg-orange-500',
-    border: 'border-orange-300'
+    accent: 'bg-[#E79BBE]',
+    border: 'border-[#E79BBE]'
   },
   holidayParty: {
     name: 'Holiday Party',
+    album: 'Play Game: Holiday',
     year: '2021',
     video: '/videos/holiday-mv.mp4',
     color: 'from-green-500 to-blue-600',
-    accent: 'bg-blue-500',
-    border: 'border-blue-300'
+    accent: 'bg-[#8E9F3A]',
+    border: 'border-[#8E9F3A]'
   },
   venPara: {
     name: 'Ven Para',
+    album: 'Play Game: Awake',
     year: '2022',
     video: '/videos/venpara-mv.mp4',
     color: 'from-yellow-500 to-red-600',
-    accent: 'bg-red-500',
-    border: 'border-red-300'
+    accent: 'bg-gray-700',
+    border: 'border-gray-700'
   },
   vroomVroom: {
     name: 'Vroom Vroom',
-    year: '2022',
+    album: 'ColoRise',
+    year: '2023',
     video: '/videos/vroom-mv.mp4',
     color: 'from-indigo-500 to-purple-600',
-    accent: 'bg-indigo-500',
-    border: 'border-indigo-300'
+    accent: 'bg-[#e3aaf3ff]',
+    border: 'border-[ #e3aaf3ff]'
   },
   lightsOn: {
     name: 'Lights On',
+    album: 'Bliss',
     year: '2023',
     video: '/videos/lightson-mv.mp4',
     color: 'from-cyan-500 to-blue-600',
-    accent: 'bg-cyan-500',
-    border: 'border-cyan-300'
+    accent: 'bg-[#FBA08E]',
+    border: 'border-[#FBA08E]'
   }
 };
 
@@ -223,7 +230,7 @@ function App() {
                 {selectedEra === 'all' ? 'All Eras' : currentEraData.name}
               </h2>
               <p className="text-white text-opacity-90 text-lg drop-shadow">
-                {selectedEra === 'all' ? 'Select an era to view specific concepts' : `We Ride - ${currentEraData.year}`}
+                {selectedEra === 'all' ? 'Select an era to view specific concepts' : `${currentEraData.album} - ${currentEraData.year}`}
               </p>
             </div>
 
@@ -237,7 +244,7 @@ function App() {
         className={`px-6 py-3 rounded-full text-sm font-semibold transition-all duration-300 whitespace-nowrap transform hover:scale-105 ${
           selectedEra === era
             ? `${eraData[era]?.accent || 'bg-white'} text-white shadow-lg scale-105`
-            : 'text-gray-200 hover:text-white bg-white bg-opacity-10 hover:bg-opacity-20'
+            : 'text-gray-400 hover:text-white bg-white bg-opacity-10 hover:bg-opacity-20'
         }`}
       >
         {era === 'all' ? 'All Eras' : eraData[era].name}
