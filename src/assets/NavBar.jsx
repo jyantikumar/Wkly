@@ -30,18 +30,21 @@ function NavBar({ setActiveView }) {
                     </li>
                 
                     <li>
-                        <a 
-                            href="" 
+                        <a href=""
                             className="hover:bg-gray-200 p-4 hover:rounded-full hover:p-4 hover:text-black"
-                            onClick={handleNavClick('members')} 
-                        >
-                            Members
+                            onClick={handleNavClick('members')} >Members
                         </a>
                     </li>
 
                     <li><a href="" className="hover:bg-gray-200 p-4 hover:rounded-full hover:p-4 hover:text-black">About</a></li> 
-                    <li><a href="" className="hover:bg-gray-200 p-4 hover:rounded-full hover:p-4 hover:text-black">MV</a></li>
-                    <li><a href="" className="hover:bg-gray-200 p-4 hover:rounded-full hover:p-4 hover:text-black">Discography</a></li>
+                    <li>
+                        <a href=""
+                            className="hover:bg-gray-200 p-4 hover:rounded-full hover:p-4 hover:text-black"
+                            onClick={handleNavClick('mv')} >MV
+                        </a>
+                    </li>
+                    <li><a href="" className="hover:bg-gray-200 p-4 hover:rounded-full hover:p-4 hover:text-black" 
+                        onClick={handleNavClick('discography')}>Discography</a></li>
                     <li><a href="" className="hover:bg-gray-200 p-4 hover:rounded-full hover:p-4 hover:text-black">Content</a></li>
                 </ul>
             </nav>

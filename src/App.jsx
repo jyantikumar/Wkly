@@ -3,6 +3,8 @@ import NavBar from "./assets/NavBar";
 import Members from "./assets/Members";
 import Hero from "./assets/Hero";
 import Video from './assets/Video';
+import MV from './assets/MV';
+import Discography from './assets/Discography';
 
 // Member data with images for each era
 const memberData = [
@@ -13,13 +15,9 @@ const memberData = [
     height: '164cm',
     color: 'Purple',
     images: {
-      tagMe: '/images/soojin-tagme.jpg',
-      zigZag: '/images/soojin-zigzag.jpg',
-      afterSchool: '/images/soojin-afterschool.jpg',
-      holidayParty: '/images/soojin-holiday.jpg',
-      venPara: '/images/soojin-venpara.jpg',
-      vroomVroom: '/images/soojin-vroom.jpg',
-      lightsOn: '/images/soojin-lightson.jpg'
+      '2020-2022': '/images/soojin-2020-2022.webp', // Use representative image
+      '2022-onwards': '/images/soojin-2022-onwards.webp', // Use representative image
+      lightsOn: '/images/soojin-lightson.webp'
     }
   },
   { 
@@ -29,13 +27,9 @@ const memberData = [
     height: '166cm',
     color: 'Orange',
     images: {
-      tagMe: '/images/hyewon-tagme.jpg',
-      zigZag: '/images/hyewon-zigzag.jpg',
-      afterSchool: '/images/hyewon-afterschool.jpg',
-      holidayParty: '/images/hyewon-holiday.jpg',
-      venPara: '/images/hyewon-venpara.jpg',
-      vroomVroom: '/images/hyewon-vroom.jpg',
-      lightsOn: '/images/hyewon-lightson.jpg'
+      '2020-2022': '/images/jiyoon-2020-2022.webp',
+      '2022-onwards': '/images/jiyoon-2022-onwards.webp',
+      lightsOn: '/images/jiyoon-lightson.webp'
     }
   },
   { 
@@ -45,13 +39,9 @@ const memberData = [
     height: '162cm',
     color: 'Blue',
     images: {
-      tagMe: '/images/jimin-tagme.jpg',
-      zigZag: '/images/jimin-zigzag.jpg',
-      afterSchool: '/images/jimin-afterschool.jpg',
-      holidayParty: '/images/jimin-holiday.jpg',
-      venPara: '/images/jimin-venpara.jpg',
-      vroomVroom: '/images/jimin-vroom.jpg',
-      lightsOn: '/images/jimin-lightson.jpg'
+      '2020-2022': '/images/jimin-2020-2022.webp',
+      '2022-onwards': '/images/jimin-2022-onwards.webp',
+      lightsOn: '/images/jimin-lightson.webp'
     }
   },
   { 
@@ -61,13 +51,9 @@ const memberData = [
     height: '163cm',
     color: 'Red',
     images: {
-      tagMe: '/images/soeun-tagme.jpg',
-      zigZag: '/images/soeun-zigzag.jpg',
-      afterSchool: '/images/soeun-afterschool.jpg',
-      holidayParty: '/images/soeun-holiday.jpg',
-      venPara: '/images/soeun-venpara.jpg',
-      vroomVroom: '/images/soeun-vroom.jpg',
-      lightsOn: '/images/soeun-lightson.jpg'
+      '2020-2022': '/images/soeun-2020-2022.webp',
+      '2022-onwards': '/images/soeun-2022-onwards.webp',
+      lightsOn: '/images/soeun-lightson.webp'
     }
   },
   { 
@@ -77,13 +63,9 @@ const memberData = [
     height: '165cm',
     color: 'Green',
     images: {
-      tagMe: '/images/jaehee-tagme.jpg',
-      zigZag: '/images/jaehee-zigzag.jpg',
-      afterSchool: '/images/jaehee-afterschool.jpg',
-      holidayParty: '/images/jaehee-holiday.jpg',
-      venPara: '/images/jaehee-venpara.jpg',
-      vroomVroom: '/images/jaehee-vroom.jpg',
-      lightsOn: '/images/jaehee-lightson.jpg'
+      '2020-2022': '/images/jaehee-2020-2022.webp',
+      '2022-onwards': '/images/jaehee-2022-onwards.webp',
+      lightsOn: '/images/jaehee-lightson.webp'
     }
   },
   { 
@@ -93,85 +75,56 @@ const memberData = [
     height: '161cm',
     color: 'Pink',
     images: {
-      tagMe: '/images/jihan-tagme.jpg',
-      zigZag: '/images/jihan-zigzag.jpg',
-      afterSchool: '/images/jihan-afterschool.jpg',
-      holidayParty: '/images/jihan-holiday.jpg',
-      venPara: '/images/jihan-venpara.jpg',
-      vroomVroom: '/images/jihan-vroom.jpg',
-      lightsOn: '/images/jihan-lightson.jpg'
+      '2020-2022': '/images/jihan-2020-2022.webp',
+      '2022-onwards': '/images/jihan-2022-onwards.webp',
+      lightsOn: '/images/jihan-lightson.webp'
+    }
+  },
+  { 
+    name: 'Cho Hyewon', 
+    positions: ['Sub Vocalist', 'Visual'],
+    birth: 'May 31, 2005',
+    height: '161cm',
+    color: 'Pink',
+    images: {
+      '2020-2022': '/images/zoa-2020-2022.webp',
+      '2022-onwards': '/images/zoa-2022-onwards.webp',
+      lightsOn: '/images/zoa-lightson.webp'
     }
   },
 ];
 
-// Era data with video sources and styling
 const eraData = {
-  tagMe: {
-    name: 'Tag Me',
-    album: 'We Are',
-    year: '2020',
-    video: '/videos/tagme-mv.mp4',
-    color: 'from-purple-500 to-pink-600',
-    accent: 'bg-[#927EB8]',
-    border: 'border-[#927EB8]'
+  '2020-2022': {
+    name: '2020-2022 Era',
+    album: 'Early Releases',
+    year: '2020-2022',
+    video: '/videos/2020-2022-era.mp4',
+    color: 'from-purple-500 to-blue-600',
+    accent: 'bg-gradient-to-r from-purple-500 to-blue-600',
+    border: 'border-purple-400'
   },
-  zigZag: {
-    name: 'Zig Zag',
-    album: 'We Can',
-    year: '2020',
-    video: '/videos/zigzag-mv.mp4',
-    color: 'from-blue-500 to-teal-600',
-    accent: 'bg-[#F29200]',
-    border: 'border-[#F29200]'
-  },
-  afterSchool: {
-    name: 'After School',
-    album: 'We Play',
-    year: '2021',
-    video: '/videos/afterschool-mv.mp4',
-    color: 'from-red-500 to-orange-600',
-    accent: 'bg-[#E79BBE]',
-    border: 'border-[#E79BBE]'
-  },
-  holidayParty: {
-    name: 'Holiday Party',
-    album: 'Play Game: Holiday',
-    year: '2021',
-    video: '/videos/holiday-mv.mp4',
-    color: 'from-green-500 to-blue-600',
-    accent: 'bg-[#8E9F3A]',
-    border: 'border-[#8E9F3A]'
-  },
-  venPara: {
-    name: 'Ven Para',
-    album: 'Play Game: Awake',
-    year: '2022',
-    video: '/videos/venpara-mv.mp4',
-    color: 'from-yellow-500 to-red-600',
-    accent: 'bg-gray-700',
-    border: 'border-gray-700'
-  },
-  vroomVroom: {
-    name: 'Vroom Vroom',
-    album: 'ColoRise',
-    year: '2023',
-    video: '/videos/vroom-mv.mp4',
-    color: 'from-indigo-500 to-purple-600',
-    accent: 'bg-[#e3aaf3ff]',
-    border: 'border-[ #e3aaf3ff]'
+  '2022-onwards': {
+    name: '2022 Onwards',
+    album: 'Recent Releases',
+    year: '2022-Present',
+    video: '/videos/2022-onwards-era.mp4',
+    color: 'from-pink-500 to-rose-600',
+    accent: 'bg-gradient-to-r from-pink-500 to-rose-600',
+    border: 'border-pink-400'
   },
   lightsOn: {
     name: 'Lights On',
-    album: 'Bliss',
+    album: 'We Fresh',
     year: '2023',
-    video: '/videos/lightson-mv.mp4',
-    color: 'from-cyan-500 to-blue-600',
-    accent: 'bg-[#FBA08E]',
-    border: 'border-[#FBA08E]'
+    video: '/videos/tagme-mv.mp4',
+    color: 'from-yellow-400 to-orange-500',
+    accent: 'bg-gradient-to-r from-yellow-400 to-orange-500',
+    border: 'border-yellow-400'
   }
 };
 
-const eras = ['tagMe', 'zigZag', 'afterSchool', 'holidayParty', 'venPara', 'vroomVroom', 'lightsOn'];
+const eras = ['2020-2022', '2022-onwards'];
 
 function App() {
   const [activeView, setActiveView] = useState('home');
@@ -201,12 +154,10 @@ function App() {
 
   return (
     <>
-      {/* Video that changes based on era */}
       <div className="fixed inset-0 z-0">
         <Video videoSource={currentEraData.video} />
       </div>
       
-      {/* NavBar with high z-index */}
       <div className="relative z-50">
         <NavBar setActiveView={setActiveView} />
       </div>
@@ -216,60 +167,87 @@ function App() {
           <Hero />
         </div>
       )}
+      {activeView === 'mv' && (
+        <div className="relative z-10">
+          <MV />
+        </div>
+      )}
+      {activeView === 'discography' && (
+        <div className="relative z-10">
+          <Discography />
+        </div>
+      )}
       
       {activeView === 'members' && (
         <div className="relative z-30 min-h-screen">
-          {/* Semi-transparent overlay */}
           <div className="fixed inset-0 bg-black bg-opacity-40 z-20"></div>
           
-          {/* Content */}
           <div className="relative z-40 pt-24 pb-16">
-            {/* Era Title */}
             <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold text-white mb-2 drop-shadow-lg">
-                {selectedEra === 'all' ? 'All Eras' : currentEraData.name}
-              </h2>
-              <p className="text-white text-opacity-90 text-lg drop-shadow">
-                {selectedEra === 'all' ? 'Select an era to view specific concepts' : `${currentEraData.album} - ${currentEraData.year}`}
-              </p>
+                <div className="inline-flex items-center gap-4 mb-4">
+                  <div className="flex gap-1">
+                    <div className="w-3 h-3 rounded-full bg-[#c4afd0]"></div>
+                    <div className="w-3 h-3 rounded-full bg-[#ffd076]"></div>
+                    <div className="w-3 h-3 rounded-full bg-[#97e0cf]"></div>
+                  </div>
+                  <span className="text-white font-semibold text-sm uppercase tracking-widest bg-black bg-opacity-50 px-4 py-2 rounded-full border border-white border-opacity-20">
+                    Weeekly Members
+                  </span>
+                  <div className="flex gap-1">
+                    <div className="w-3 h-3 rounded-full bg-[#97e0cf]"></div>
+                    <div className="w-3 h-3 rounded-full bg-[#ffd076]"></div>
+                    <div className="w-3 h-3 rounded-full bg-[#c4afd0]"></div>
+                  </div>
+                </div>
             </div>
+
 
             {/* Horizontal Tube Era Selector */}
             <div className="flex justify-center mb-16 px-4">
-  <div className="bg-black bg-opacity-60 backdrop-blur-xl rounded-full shadow-2xl p-3 flex space-x-2 z-50 overflow-x-auto max-w-4xl scrollbar-hide border border-white border-opacity-20">
-    {eras.map((era) => (
-      <button
-        key={era}
-        onClick={() => handleEraChange(era)}
-        className={`px-6 py-3 rounded-full text-sm font-semibold transition-all duration-300 whitespace-nowrap transform hover:scale-105 ${
-          selectedEra === era
-            ? `${eraData[era]?.accent || 'bg-white'} text-white shadow-lg scale-105`
-            : 'text-gray-400 hover:text-white bg-white bg-opacity-10 hover:bg-opacity-20'
-        }`}
-      >
-        {era === 'all' ? 'All Eras' : eraData[era].name}
-      </button>
-    ))}
-  </div>
-</div>
+              <div className="bg-black bg-opacity-60 backdrop-blur-xl rounded-full shadow-2xl p-3 flex space-x-2 z-50 overflow-x-auto max-w-4xl scrollbar-hide border border-white border-opacity-20">
+                {eras.map((era) => (
+                  <button
+                    key={era}
+                    onClick={() => handleEraChange(era)}
+                    className={`px-6 py-3 rounded-full text-sm font-semibold transition-all duration-300 whitespace-nowrap transform hover:scale-105 ${
+                      selectedEra === era
+                        ? `${eraData[era]?.accent || 'bg-white'} text-white shadow-lg scale-105`
+                        : 'text-gray-400 hover:text-white bg-white bg-opacity-10 hover:bg-opacity-20'
+                    }`}
+                  >
+                    {era === 'all' ? 'All Eras' : 
+                     era === '2020-2022' ? '2020-2022' :
+                     era === '2022-onwards' ? '2022 Onwards' :
+                     eraData[era].name}
+                  </button>
+                ))}
+              </div>
+            </div>
 
             {/* Members Grid */}
             <div className="flex flex-wrap justify-center px-4 gap-8 z-40">
-              {memberData.map((member, index) => (
-                <Members 
-                  key={index}
-                  name={member.name}
-                  positions={member.positions}
-                  birth={member.birth}
-                  height={member.height}
-                  color={member.color}
-                  memberImages={member.images}
-                  selectedEra={selectedEra}
-                  currentEraData={currentEraData}
-                  transitionClass={activeClass} 
-                  delayIndex={index % 6}
-                />
-              ))}
+              {memberData
+                .filter(member => {
+                  if ((selectedEra === '2022-onwards') && member.name === 'Shin Jiyoon') {
+                    return false;
+                  }
+                  return true;
+                })
+                .map((member, index) => (
+                  <Members 
+                    key={index}
+                    name={member.name}
+                    positions={member.positions}
+                    birth={member.birth}
+                    height={member.height}
+                    color={member.color}
+                    memberImages={member.images}
+                    selectedEra={selectedEra}
+                    currentEraData={currentEraData}
+                    transitionClass={activeClass} 
+                    delayIndex={index % 6}
+                  />
+                ))}
             </div>
           </div>
         </div>
