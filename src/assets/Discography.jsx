@@ -21,7 +21,7 @@ const discographyData = [
       ]
     },
     total_tracks: 3,
-    external_urls: { spotify: 'https://open.spotify.com/album/1sSUGCd1W4q1mJxklV2tBT' }
+    external_urls: { spotify: 'https://open.spotify.com/album/0qx1YZJgVYPhs8YpeMGUoE?highlight=spotify:track:2c9U3dCAq63W5vm9B12XlQ' }
   },
   {
     id: '2',
@@ -40,7 +40,7 @@ const discographyData = [
       ]
     },
     total_tracks: 4,
-    external_urls: { spotify: 'https://open.spotify.com/album/5oJ0EsvCf2zhs0l0RlbaMf' }
+    external_urls: { spotify: 'https://open.spotify.com/album/3RXt9jdd9X57jxbyk9Mg9y?si=jRCbLTBoTK60e8fchjMveg' }
   },
   {
     id: '3',
@@ -58,7 +58,7 @@ const discographyData = [
       ]
     },
     total_tracks: 3,
-    external_urls: { spotify: 'https://open.spotify.com/album/55C3eT6Zr6r97w7Wp34l1z' }
+    external_urls: { spotify: 'https://open.spotify.com/album/4kU6DFVgZKoDYQPZk1OZp9?si=fA-4hCRGTb-3ma8xwu21XA' }
   },
   {
     id: '4',
@@ -75,11 +75,11 @@ const discographyData = [
       ]
     },
     total_tracks: 2,
-    external_urls: { spotify: 'https://open.spotify.com/album/4x5XG9G8MD4uYvLx9d6K7v' }
+    external_urls: { spotify: 'https://open.spotify.com/album/1FDlvA1PdZujiEhbXihIPJ?si=9fBsbz7TRb6HosD5sYqqRw' }
   },
   {
     id: '5',
-    type: 'album',
+    type: 'single',
     name: 'Play Game: Awake',
     release_date: '2022-03-07',
     images: [
@@ -93,7 +93,7 @@ const discographyData = [
       ]
     },
     total_tracks: 3,
-    external_urls: { spotify: 'https://open.spotify.com/album/6zNP1OaGmGW7pB6LpAhKJ3' }
+    external_urls: { spotify: 'https://open.spotify.com/album/6ACwt54tvpe4XrMbxXzXXb?si=JLHkyWKcQOynAzwFRM52fg' }
   },
   {
     id: '6',
@@ -111,7 +111,7 @@ const discographyData = [
       ]
     },
     total_tracks: 3,
-    external_urls: { spotify: 'https://open.spotify.com/album/6J5p4H7G6q7q5p5' }
+    external_urls: { spotify: 'https://open.spotify.com/album/1VJ62OC6tQN9n5ss3uEQyr?si=nVDqLXlkSPWkB6PgkKcnZw' }
   },
   {
     id: '7',
@@ -129,7 +129,7 @@ const discographyData = [
       ]
     },
     total_tracks: 3,
-    external_urls: { spotify: 'https://open.spotify.com/album/6J5p4H7G6q7q5p5' }
+    external_urls: { spotify: 'https://open.spotify.com/album/5L7D7qRVcgeuz9KqnbnxnK?si=rey6MQI2Tw-PbqWkMoCd3Q' }
   }
 
 ];
